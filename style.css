@@ -1,0 +1,86 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Ruht Regular';
+    src: url('/fonts/FrankRuhlLibre-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Ruht Medium';
+    src: url('/fonts/FrankRuhlLibre-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Ruht Bold';
+    src: url('/fonts/FrankRuhlLibre-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Vibe';
+    src: url('/fonts/GreatVibes-Regular.ttf');
+}
+
+html {
+    font-size: 62.5%;
+
+    /* CSS Variable */
+    --header-1: calc(3.8rem + 1vw);
+    --header-2: calc(3.5rem + 1vw);
+    --small-header: calc(3rem + 1vw);
+    --general-size: calc(1.5rem + 1vw);
+    --main-color: #414141;
+    --primary-color: #525252;
+    --secondary-color:#906272;
+}
+
+body {
+    font-family: 'Arial', Courier, monospace;
+}
+
+h1 {
+    font-size: var(--header-1);
+}
+
+h2 {
+    font-size: var(--header-2);
+}
+
+h3,
+h4,
+h5 {
+    font-size: var(--small-header);
+    font-weight: normal;
+}
+
+li,
+label,
+input,
+p {
+    font-size: var(--general-size);
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+button {
+    padding: 2rem 6rem;
+    background-color: rgb(0, 153, 82);
+    color: #ffffff;
+    border: none;
+    font-size: 1.8;
+    cursor: pointer;
+}
+
+.flex-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
